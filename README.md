@@ -65,7 +65,8 @@ Outputting
 #### Node.JS
 ``` javascript
 qvm.api({
-  q: KEY
+  q: KEY,
+  version: 0
 }, (data) => {
   // Do Whatever
 });
