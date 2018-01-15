@@ -71,7 +71,7 @@ qvm.api({
   // Do Whatever
 });
 ```
-Replace version with the index of the data you want to find, the versioning works like an array starting at 0 and going up ffrom there.
+Replace version with the index of the data you want to find, the versioning works like an array starting at 0 and going up from there.
 ### Error's
 #### HTTP
 ```
