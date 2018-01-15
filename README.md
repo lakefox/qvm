@@ -10,7 +10,7 @@ npm install qvm
 then run it in your application 
 ```
 const qvm = require('qvm');
-qvm.startServer(8080); // Your can use any port you want
+qvm.startServer(8080); // Your can use any port you want (this is optional only if you want a http api)
 
 // rest of your code
 ```
