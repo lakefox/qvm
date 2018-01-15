@@ -71,7 +71,7 @@ qvm.api({
   // Do Whatever
 });
 ```
-Replace KEY with the key you previously used to store the value
+Replace version with the index of the data you want to find, the versioning works like an array starting at 0 and going up ffrom there.
 ### Error's
 #### HTTP
 ```
@@ -82,3 +82,9 @@ Outputting
 ```
 This means you haven't stored any values with the corresponding key
 
+```
+curl "http://localhost:8080/qvm/?q=KEY&version=12938108"
+
+Outputting
+>>> {error: 'value doesn't exist'}
+```
