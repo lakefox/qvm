@@ -10,10 +10,11 @@ npm install qvm
 then run it in your application 
 ```
 const qvm = require('qvm');
-qvm.startServer(8080); // Your can use any port you want (this is optional only if you want a http api)
+qvm.startServer(8080); // Your can use any port you want
 
 // rest of your code
 ```
+qvm.startServer is optional only if you want a http api. !WARNING this is NOT secured do not open this api to anyone only server's or a trusted endpoint!
 
 ### Storing a value
 #### HTTP
