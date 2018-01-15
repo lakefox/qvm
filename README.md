@@ -36,32 +36,7 @@ qvm.api({
 ```
 Replace KEY with the key you want to look up the value with, and replace VALUE with the data you want to store.
 #### Versioning
-qvm.js 
-### Error's
-```
-curl "http://localhost:8080/qvm/?key=KEY&value=VALUE"
-
-Outputting
->>> {error: 'file exists, overwrite with &overwrite=true'}
-```
-This means you are trying to write over a existing file but you can fix it by doing this
-#### HTTP
-```
-curl "http://localhost:8080/qvm/?key=KEY&value=VALUE&overwrite=true"
-
-Outputting
->>> {sucess: true}
-```
-#### Node.JS
-``` javascript
-qvm.api({
-  key: KEY,
-  value: VALUE,
-  overwrite: "true" // this has to be a string
-}, (logs) => {
-  // logs >> {sucess: true}
-});
-```
+Whenever you store a value the value is stored in a blockchain, that means this database is append only. So when you query the database it returns the most recent value stored but every change is stored on the database so you can request old values but you can't remove a value this is useful because you are able to keep a record of every change in a value. [Read more on append only databases](http://usblogs.pwc.com/emerging-technology/the-rise-of-immutable-data-stores/)
 ### Reading a value
 #### HTTP
 ```
