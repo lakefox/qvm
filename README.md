@@ -86,5 +86,5 @@ This means you haven't stored any values with the corresponding key
 curl "http://localhost:8080/qvm/?q=KEY&version=12938108"
 
 Outputting
->>> {error: 'value doesn't exist'}
+>>> {error: 'version out of range: version < 3'}
 ```
