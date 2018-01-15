@@ -88,3 +88,4 @@ curl "http://localhost:8080/qvm/?q=KEY&version=12938108"
 Outputting
 >>> {error: 'version out of range: version < 3'}
 ```
+This means that there are < 3 versions stored on the server so you need to pick a value between 0-2
