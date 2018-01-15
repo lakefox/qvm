@@ -9,7 +9,7 @@ npm install qvm
 ```
 then run it in your application 
 ```
-const megaquery = require('qvm');
+const qvm = require('qvm');
 qvm.startServer(8080); // Your can use any port you want
 
 // rest of your code
