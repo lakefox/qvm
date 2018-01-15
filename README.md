@@ -54,6 +54,23 @@ qvm.api({
 });
 ```
 Replace KEY with the key you previously used to store the value
+### Reading old versions
+#### HTTP
+```
+curl "http://localhost:8080/qvm/?q=KEY&version=0"
+
+Outputting
+>>> VALUE
+```
+#### Node.JS
+``` javascript
+qvm.api({
+  q: KEY
+}, (data) => {
+  // Do Whatever
+});
+```
+Replace KEY with the key you previously used to store the value
 ### Error's
 #### HTTP
 ```
