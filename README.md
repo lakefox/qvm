@@ -82,7 +82,7 @@ Replace KEY with the key you previously used to store the value, VALUE is what e
 ### Error's
 #### HTTP
 ```
-curl "http://localhost:8080/database/?q=KEY"
+curl "http://localhost:8080/qvm/?q=KEY"
 
 Outputting
 >>> {error: 'value doesn't exist'}
