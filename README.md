@@ -53,8 +53,7 @@ qvm.api({
   // Do Whatever
 });
 ```
-Replace KEY with the key you previously used to store the value, VALUE is what ever you stored on the server with the KEY
-
+Replace KEY with the key you previously used to store the value
 ### Error's
 #### HTTP
 ```
