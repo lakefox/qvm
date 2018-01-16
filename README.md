@@ -57,7 +57,7 @@ Replace KEY with the key you previously used to store the value
 ### Reading old versions
 #### HTTP
 ```
-curl "http://localhost:8080/qvm/?q=KEY&version=0"
+curl "http://localhost:8080/qvm/?q=KEY&block=0"
 
 Outputting
 >>> VALUE
@@ -66,12 +66,12 @@ Outputting
 ``` javascript
 qvm.api({
   q: KEY,
-  version: 0
+  block: 0
 }, (data) => {
   // Do Whatever
 });
 ```
-Replace version with the index of the data you want to find, the versioning works like an array starting at 0 and going up from there.
+Replace block with the index of the data you want to find, the versioning works like an array starting at 0 and going up from there.
 ### Error's
 #### HTTP
 ```
@@ -83,9 +83,9 @@ Outputting
 This means you haven't stored any values with the corresponding key
 
 ```
-curl "http://localhost:8080/qvm/?q=KEY&version=12938108"
+curl "http://localhost:8080/qvm/?q=KEY&block=12938108"
 
 Outputting
->>> {error: 'version out of range: version < 3'}
+>>> {error: 'block out of range: block < 3'}
 ```
 This means that there are < 3 versions stored on the server so you need to pick a value between 0-2
