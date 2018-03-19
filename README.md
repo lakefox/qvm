@@ -1,5 +1,5 @@
 # QVM.js
-MeagaQuery is a database that is designed to search billions of key's that are similar, like a license plate number or a [GeoKey](https://github.com/lakefox/geokey), and runs on very low end hardware like a laptop.
+QVM is a wrapper that runs over [MEGAQUERY](https://github.com/lakefox/megaquery) that provides an increible amount of encryption to you database. 
 
 ### Running:
 
